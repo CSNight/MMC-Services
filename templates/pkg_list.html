@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Archive Explore</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/normalize.css"/>
+    <link href="../static/css/file-explore.css" rel="stylesheet" type="text/css">
+    <script src="../static/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <script src="../static/js/file-explore.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.process').remove();
+            $(".file-tree").filetree();
+        });
+    </script>
+</head>
+<body style="background-color: #0c0c0c;height: auto">
+<div class="process">Processing, Please Wait</div>
+<div style="color:#f0f0f0">{{ filename }}</div>
+<ul class="file-tree"><a href="#">{{ tree.xp }}</a>
+    {%- for item in tree.children recursive %}
+        <li>
+            {%- if item.children|length()>0 -%}
+                <a href="#" style="color:deepskyblue">{{ item.xp }}</a>
+            {% else %}
+                <a href="#">{{ item.xp }}</a>
+            {%- endif %}
+            {%- if item.children -%}
+                <ul>{{ loop(item.children) }}</ul>
+            {%- endif %}
+        </li>
+    {%- endfor %}
+</ul>
+</body>
+</html>

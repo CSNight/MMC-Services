@@ -1,0 +1,27 @@
+<application xmlns="http://MMC_SERVER.PYTHON">
+    <grammars></grammars>
+    <interfaces base="{{ base }}">
+        {% for interface in interfaces %}
+            <interface name="{{ interface }}" functions_count="{{ interfaces[interface]|length() }}">
+                {% for resource in interfaces[interface] %}
+                    <resource path="{{ resource.url }}">
+                        <method name="{{ resource.methods }}" function="{{ resource.func }}">
+                            <request>
+                                {% for para in resource.paras %}
+                                    <param name="{{ para }}" type="xs:string"/>
+                                {% endfor %}
+                            </request>
+                            <response>
+                                {% for res in resource.response_type %}
+                                    <representation mediaType="{{ res }}">
+                                        <param name="result" type="xs:string"/>
+                                    </representation>
+                                {% endfor %}
+                            </response>
+                        </method>
+                    </resource>
+                {% endfor %}
+            </interface>
+        {% endfor %}
+    </interfaces>
+</application>

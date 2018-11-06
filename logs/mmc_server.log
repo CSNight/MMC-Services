@@ -1,0 +1,264 @@
+2018-11-06 13:46:26,466  Server_Interface.py : ERROR  Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 484, in connect
+    sock = self._connect()
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 541, in _connect
+    raise err
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\client.py", line 667, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 610, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 585, in send_packed_command
+    self.connect()
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 484, in connect
+    sock = self._connect()
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 541, in _connect
+    raise err
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.0\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 224, in cache_lists
+    return pl.cache_list(data["uid"], m_type, json.loads(ids))
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 79, in cache_list
+    if self.__redis.exists(uid + '_' + m_type):
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\client.py", line 951, in exists
+    return self.execute_command('EXISTS', name)
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\client.py", line 673, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 610, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 585, in send_packed_command
+    self.connect()
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+2018-11-06 13:46:27,750  Server_Interface.py : ERROR  Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 484, in connect
+    sock = self._connect()
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 541, in _connect
+    raise err
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\client.py", line 667, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 610, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 585, in send_packed_command
+    self.connect()
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 484, in connect
+    sock = self._connect()
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 541, in _connect
+    raise err
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.0\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 224, in cache_lists
+    return pl.cache_list(data["uid"], m_type, json.loads(ids))
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 79, in cache_list
+    if self.__redis.exists(uid + '_' + m_type):
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\client.py", line 951, in exists
+    return self.execute_command('EXISTS', name)
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\client.py", line 673, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 610, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 585, in send_packed_command
+    self.connect()
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+2018-11-06 13:46:28,278  Server_Interface.py : ERROR  Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 484, in connect
+    sock = self._connect()
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 541, in _connect
+    raise err
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\client.py", line 667, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 610, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 585, in send_packed_command
+    self.connect()
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 484, in connect
+    sock = self._connect()
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 541, in _connect
+    raise err
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.0\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 224, in cache_lists
+    return pl.cache_list(data["uid"], m_type, json.loads(ids))
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 79, in cache_list
+    if self.__redis.exists(uid + '_' + m_type):
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\client.py", line 951, in exists
+    return self.execute_command('EXISTS', name)
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\client.py", line 673, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 610, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 585, in send_packed_command
+    self.connect()
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+2018-11-06 13:46:48,486  Server_Interface.py : ERROR  Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 484, in connect
+    sock = self._connect()
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 541, in _connect
+    raise err
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\client.py", line 667, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 610, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 585, in send_packed_command
+    self.connect()
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 484, in connect
+    sock = self._connect()
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 541, in _connect
+    raise err
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 529, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.0\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.0\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 224, in cache_lists
+    return pl.cache_list(data["uid"], m_type, json.loads(ids))
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 79, in cache_list
+    if self.__redis.exists(uid + '_' + m_type):
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\client.py", line 951, in exists
+    return self.execute_command('EXISTS', name)
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\client.py", line 673, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 610, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 585, in send_packed_command
+    self.connect()
+  File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 489, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
