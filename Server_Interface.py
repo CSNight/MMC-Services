@@ -114,11 +114,7 @@ def shutdown():
 
 def start_server():
     if __name__ == '__main__':
-        parser = ArgumentParser()
-        parser.add_argument('-p', '--port', default=5000, type=int, help='port to listen on')
-        args = parser.parse_args()
-        port = args.port
-        app.run('127.0.0.1', port, threaded=True, processes=4)
+        app.run('127.0.0.1', 5000, threaded=True)
 
 
 def shutdown_server():
@@ -145,5 +141,4 @@ back_task.add_job(clear_dir, 'cron', hour=0, minute=0, second=0)
 back_task.add_job(db_release, 'cron', day_of_week=6, hour=0, minute=5, second=0)
 back_task.start()
 
-if __name__ == '__main__':
-    start_server()
+start_server()

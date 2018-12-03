@@ -262,3 +262,788 @@ Traceback (most recent call last):
   File "D:\Software\Python3.7.0\lib\site-packages\redis\connection.py", line 489, in connect
     raise ConnectionError(self._error_message(e))
 redis.exceptions.ConnectionError: Error 10061 connecting to 127.0.0.1:6379. 由于目标计算机积极拒绝，无法连接。.
+2018-12-03 15:47:19,587  Server_Interface.py : ERROR  Invalid input of type: 'list'. Convert to a byte, string or number first.
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 224, in cache_lists
+    return pl.cache_list(data["uid"], m_type, json.loads(ids))
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 81, in cache_list
+    self.__redis.sadd(uid + '_' + m_type, ids)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 1821, in sadd
+    return self.execute_command('SADD', name, *values)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 659, in pack_command
+    for arg in imap(self.encoder.encode, args):
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 124, in encode
+    "byte, string or number first." % typename)
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a byte, string or number first.
+2018-12-03 15:47:21,571  Server_Interface.py : ERROR  Invalid input of type: 'list'. Convert to a byte, string or number first.
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 224, in cache_lists
+    return pl.cache_list(data["uid"], m_type, json.loads(ids))
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 81, in cache_list
+    self.__redis.sadd(uid + '_' + m_type, ids)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 1821, in sadd
+    return self.execute_command('SADD', name, *values)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 659, in pack_command
+    for arg in imap(self.encoder.encode, args):
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 124, in encode
+    "byte, string or number first." % typename)
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a byte, string or number first.
+2018-12-03 15:47:22,580  Server_Interface.py : ERROR  Invalid input of type: 'list'. Convert to a byte, string or number first.
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 224, in cache_lists
+    return pl.cache_list(data["uid"], m_type, json.loads(ids))
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 81, in cache_list
+    self.__redis.sadd(uid + '_' + m_type, ids)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 1821, in sadd
+    return self.execute_command('SADD', name, *values)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 659, in pack_command
+    for arg in imap(self.encoder.encode, args):
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 124, in encode
+    "byte, string or number first." % typename)
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a byte, string or number first.
+2018-12-03 15:47:31,771  Server_Interface.py : ERROR  Invalid input of type: 'list'. Convert to a byte, string or number first.
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 224, in cache_lists
+    return pl.cache_list(data["uid"], m_type, json.loads(ids))
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 81, in cache_list
+    self.__redis.sadd(uid + '_' + m_type, ids)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 1821, in sadd
+    return self.execute_command('SADD', name, *values)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 659, in pack_command
+    for arg in imap(self.encoder.encode, args):
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 124, in encode
+    "byte, string or number first." % typename)
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a byte, string or number first.
+2018-12-03 15:47:32,031  Server_Interface.py : ERROR  Invalid input of type: 'list'. Convert to a byte, string or number first.
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 224, in cache_lists
+    return pl.cache_list(data["uid"], m_type, json.loads(ids))
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 81, in cache_list
+    self.__redis.sadd(uid + '_' + m_type, ids)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 1821, in sadd
+    return self.execute_command('SADD', name, *values)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 659, in pack_command
+    for arg in imap(self.encoder.encode, args):
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 124, in encode
+    "byte, string or number first." % typename)
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a byte, string or number first.
+2018-12-03 15:47:45,687  Server_Interface.py : ERROR  Invalid input of type: 'list'. Convert to a byte, string or number first.
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 224, in cache_lists
+    return pl.cache_list(data["uid"], m_type, json.loads(ids))
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 81, in cache_list
+    self.__redis.sadd(uid + '_' + m_type, ids)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 1821, in sadd
+    return self.execute_command('SADD', name, *values)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 659, in pack_command
+    for arg in imap(self.encoder.encode, args):
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 124, in encode
+    "byte, string or number first." % typename)
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a byte, string or number first.
+2018-12-03 15:47:47,637  Server_Interface.py : ERROR  Invalid input of type: 'list'. Convert to a byte, string or number first.
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 224, in cache_lists
+    return pl.cache_list(data["uid"], m_type, json.loads(ids))
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 81, in cache_list
+    self.__redis.sadd(uid + '_' + m_type, ids)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 1821, in sadd
+    return self.execute_command('SADD', name, *values)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 659, in pack_command
+    for arg in imap(self.encoder.encode, args):
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 124, in encode
+    "byte, string or number first." % typename)
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a byte, string or number first.
+2018-12-03 15:47:48,053  Server_Interface.py : ERROR  Invalid input of type: 'list'. Convert to a byte, string or number first.
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 224, in cache_lists
+    return pl.cache_list(data["uid"], m_type, json.loads(ids))
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 81, in cache_list
+    self.__redis.sadd(uid + '_' + m_type, ids)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 1821, in sadd
+    return self.execute_command('SADD', name, *values)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 659, in pack_command
+    for arg in imap(self.encoder.encode, args):
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 124, in encode
+    "byte, string or number first." % typename)
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a byte, string or number first.
+2018-12-03 15:47:48,238  Server_Interface.py : ERROR  Invalid input of type: 'list'. Convert to a byte, string or number first.
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 224, in cache_lists
+    return pl.cache_list(data["uid"], m_type, json.loads(ids))
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 81, in cache_list
+    self.__redis.sadd(uid + '_' + m_type, ids)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 1821, in sadd
+    return self.execute_command('SADD', name, *values)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 659, in pack_command
+    for arg in imap(self.encoder.encode, args):
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 124, in encode
+    "byte, string or number first." % typename)
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a byte, string or number first.
+2018-12-03 15:47:49,718  Server_Interface.py : ERROR  Invalid input of type: 'list'. Convert to a byte, string or number first.
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 224, in cache_lists
+    return pl.cache_list(data["uid"], m_type, json.loads(ids))
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 81, in cache_list
+    self.__redis.sadd(uid + '_' + m_type, ids)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 1821, in sadd
+    return self.execute_command('SADD', name, *values)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 659, in pack_command
+    for arg in imap(self.encoder.encode, args):
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 124, in encode
+    "byte, string or number first." % typename)
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a byte, string or number first.
+2018-12-03 15:48:11,486  Server_Interface.py : ERROR  Invalid input of type: 'list'. Convert to a byte, string or number first.
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 224, in cache_lists
+    return pl.cache_list(data["uid"], m_type, json.loads(ids))
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 81, in cache_list
+    self.__redis.sadd(uid + '_' + m_type, ids)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 1821, in sadd
+    return self.execute_command('SADD', name, *values)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 659, in pack_command
+    for arg in imap(self.encoder.encode, args):
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 124, in encode
+    "byte, string or number first." % typename)
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a byte, string or number first.
+2018-12-03 15:48:14,366  Server_Interface.py : ERROR  Invalid input of type: 'list'. Convert to a byte, string or number first.
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 224, in cache_lists
+    return pl.cache_list(data["uid"], m_type, json.loads(ids))
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 81, in cache_list
+    self.__redis.sadd(uid + '_' + m_type, ids)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 1821, in sadd
+    return self.execute_command('SADD', name, *values)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 659, in pack_command
+    for arg in imap(self.encoder.encode, args):
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 124, in encode
+    "byte, string or number first." % typename)
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a byte, string or number first.
+2018-12-03 15:49:27,575  Server_Interface.py : ERROR  Invalid input of type: 'list'. Convert to a byte, string or number first.
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 224, in cache_lists
+    return pl.cache_list(data["uid"], m_type, json.loads(ids))
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 81, in cache_list
+    self.__redis.sadd(uid + '_' + m_type, ids)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 1821, in sadd
+    return self.execute_command('SADD', name, *values)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 659, in pack_command
+    for arg in imap(self.encoder.encode, args):
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 124, in encode
+    "byte, string or number first." % typename)
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a byte, string or number first.
+2018-12-03 15:50:44,036  Server_Interface.py : ERROR  Invalid input of type: 'list'. Convert to a byte, string or number first.
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 224, in cache_lists
+    return pl.cache_list(data["uid"], m_type, json.loads(ids))
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 81, in cache_list
+    self.__redis.sadd(uid + '_' + m_type, ids)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 1821, in sadd
+    return self.execute_command('SADD', name, *values)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 659, in pack_command
+    for arg in imap(self.encoder.encode, args):
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 124, in encode
+    "byte, string or number first." % typename)
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a byte, string or number first.
+2018-12-03 15:52:28,643  Server_Interface.py : ERROR  Invalid input of type: 'list'. Convert to a byte, string or number first.
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 224, in cache_lists
+    return pl.cache_list(data["uid"], m_type, json.loads(ids))
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 81, in cache_list
+    self.__redis.sadd(uid + '_' + m_type, ids)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 1821, in sadd
+    return self.execute_command('SADD', name, *values)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 659, in pack_command
+    for arg in imap(self.encoder.encode, args):
+  File "D:\Software\Python3.7.1\lib\site-packages\redis\connection.py", line 124, in encode
+    "byte, string or number first." % typename)
+redis.exceptions.DataError: Invalid input of type: 'list'. Convert to a byte, string or number first.
+2018-12-03 15:53:39,160  Server_Interface.py : ERROR  unexpected EOF while parsing (<string>, line 1)
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 238, in get_list
+    return pl.get_cache_list(data["uid"], m_type)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 91, in get_cache_list
+    play_list = eval(set(self.__redis.smembers(uid + '_' + m_type)).pop())
+  File "<string>", line 1
+    5b56d593e2e9e00b3043d3a9
+                           ^
+SyntaxError: unexpected EOF while parsing
+2018-12-03 15:53:53,651  Server_Interface.py : ERROR  unexpected EOF while parsing (<string>, line 1)
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 238, in get_list
+    return pl.get_cache_list(data["uid"], m_type)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 91, in get_cache_list
+    play_list = eval(set(self.__redis.smembers(uid + '_' + m_type)).pop())
+  File "<string>", line 1
+    5b56d593e2e9e00b3043d3a9
+                           ^
+SyntaxError: unexpected EOF while parsing
+2018-12-03 15:54:14,751  Server_Interface.py : ERROR  unexpected EOF while parsing (<string>, line 1)
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 238, in get_list
+    return pl.get_cache_list(data["uid"], m_type)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 91, in get_cache_list
+    play_list = eval(set(self.__redis.smembers(uid + '_' + m_type)).pop())
+  File "<string>", line 1
+    5b56d570e2e9e00b3043d2d8
+                           ^
+SyntaxError: unexpected EOF while parsing
+2018-12-03 15:54:44,853  Server_Interface.py : ERROR  unexpected EOF while parsing (<string>, line 1)
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 238, in get_list
+    return pl.get_cache_list(data["uid"], m_type)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 91, in get_cache_list
+    play_list = eval(set(self.__redis.smembers(uid + '_' + m_type)).pop())
+  File "<string>", line 1
+    5b56d593e2e9e00b3043d3a9
+                           ^
+SyntaxError: unexpected EOF while parsing
+2018-12-03 15:57:15,276  Server_Interface.py : ERROR  unexpected EOF while parsing (<string>, line 1)
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 238, in get_list
+    return pl.get_cache_list(data["uid"], m_type)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 91, in get_cache_list
+    play_list = eval(set(self.__redis.smembers(uid + '_' + m_type)).pop())
+  File "<string>", line 1
+    5b56d570e2e9e00b3043d2bc
+                           ^
+SyntaxError: unexpected EOF while parsing
+2018-12-03 15:58:03,913  Server_Interface.py : ERROR  unexpected EOF while parsing (<string>, line 1)
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 238, in get_list
+    return pl.get_cache_list(data["uid"], m_type)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 91, in get_cache_list
+    play_list = eval(set(self.__redis.smembers(uid + '_' + m_type)).pop())
+  File "<string>", line 1
+    5b56d593e2e9e00b3043d3cb
+                           ^
+SyntaxError: unexpected EOF while parsing
+2018-12-03 15:59:48,966  Server_Interface.py : ERROR  EOL while scanning string literal (<string>, line 1)
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 238, in get_list
+    return pl.get_cache_list(data["uid"], m_type)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 91, in get_cache_list
+    play_list = eval(set(str(self.__redis.smembers(uid + '_' + m_type))).pop())
+  File "<string>", line 1
+    '
+    ^
+SyntaxError: EOL while scanning string literal
+2018-12-03 16:00:01,213  Server_Interface.py : ERROR  EOL while scanning string literal (<string>, line 1)
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 238, in get_list
+    return pl.get_cache_list(data["uid"], m_type)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 91, in get_cache_list
+    play_list = eval(set(str(self.__redis.smembers(uid + '_' + m_type))).pop())
+  File "<string>", line 1
+    '
+    ^
+SyntaxError: EOL while scanning string literal
+2018-12-03 16:00:01,225  Server_Interface.py : ERROR  EOL while scanning string literal (<string>, line 1)
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 238, in get_list
+    return pl.get_cache_list(data["uid"], m_type)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 91, in get_cache_list
+    play_list = eval(set(str(self.__redis.smembers(uid + '_' + m_type))).pop())
+  File "<string>", line 1
+    '
+    ^
+SyntaxError: EOL while scanning string literal
+2018-12-03 16:01:43,774  Server_Interface.py : ERROR  id must be an instance of (bytes, str, ObjectId), not <class 'int'>
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 238, in get_list
+    return pl.get_cache_list(data["uid"], m_type)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 93, in get_cache_list
+    m_f = self.__mongo.search_by_kv_pair(self.__file_store, {'_id': ObjectId(item)})
+  File "D:\Software\Python3.7.1\lib\site-packages\bson\objectid.py", line 125, in __init__
+    self.__validate(oid)
+  File "D:\Software\Python3.7.1\lib\site-packages\bson\objectid.py", line 224, in __validate
+    "not %s" % (text_type.__name__, type(oid)))
+TypeError: id must be an instance of (bytes, str, ObjectId), not <class 'int'>
+2018-12-03 16:02:02,507  Server_Interface.py : ERROR  id must be an instance of (bytes, str, ObjectId), not <class 'int'>
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 238, in get_list
+    return pl.get_cache_list(data["uid"], m_type)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 93, in get_cache_list
+    m_f = self.__mongo.search_by_kv_pair(self.__file_store, {'_id': ObjectId(item)})
+  File "D:\Software\Python3.7.1\lib\site-packages\bson\objectid.py", line 125, in __init__
+    self.__validate(oid)
+  File "D:\Software\Python3.7.1\lib\site-packages\bson\objectid.py", line 224, in __validate
+    "not %s" % (text_type.__name__, type(oid)))
+TypeError: id must be an instance of (bytes, str, ObjectId), not <class 'int'>
+2018-12-03 16:04:22,929  Server_Interface.py : ERROR  "b'5b56d593e2e9e00b3043d3a9'" is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 238, in get_list
+    return pl.get_cache_list(data["uid"], m_type)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 93, in get_cache_list
+    m_f = self.__mongo.search_by_kv_pair(self.__file_store, {'_id': ObjectId(item)})
+  File "D:\Software\Python3.7.1\lib\site-packages\bson\objectid.py", line 125, in __init__
+    self.__validate(oid)
+  File "D:\Software\Python3.7.1\lib\site-packages\bson\objectid.py", line 221, in __validate
+    _raise_invalid_id(oid)
+  File "D:\Software\Python3.7.1\lib\site-packages\bson\objectid.py", line 67, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+bson.errors.InvalidId: "b'5b56d593e2e9e00b3043d3a9'" is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+2018-12-03 16:09:00,506  Server_Interface.py : ERROR  "b'5b56d570e2e9e00b3043d2d8'" is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string
+Traceback (most recent call last):
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask_cors\extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Software\Python3.7.1\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 239, in get_list
+    return pl.get_cache_list(data["uid"], m_type)
+  File "E:\Python_Pycharm_Workspace\MMC-Services\data_views\player_logic.py", line 94, in get_cache_list
+    m_f = self.__mongo.search_by_kv_pair(self.__file_store, {'_id': ObjectId(item)})
+  File "D:\Software\Python3.7.1\lib\site-packages\bson\objectid.py", line 125, in __init__
+    self.__validate(oid)
+  File "D:\Software\Python3.7.1\lib\site-packages\bson\objectid.py", line 221, in __validate
+    _raise_invalid_id(oid)
+  File "D:\Software\Python3.7.1\lib\site-packages\bson\objectid.py", line 67, in _raise_invalid_id
+    " or a 24-character hex string" % oid)
+bson.errors.InvalidId: "b'5b56d570e2e9e00b3043d2d8'" is not a valid ObjectId, it must be a 12-byte input or a 24-character hex string

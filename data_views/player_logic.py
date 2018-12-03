@@ -78,7 +78,7 @@ class PlayerLogic:
     def cache_list(self, uid, m_type, ids):
         if self.__redis.exists(uid + '_' + m_type):
             self.__redis.delete(uid + '_' + m_type)
-        self.__redis.sadd(uid + '_' + m_type, ids)
+        self.__redis.sadd(uid + '_' + m_type, *ids)
         if self.__mongo.exist(self.__collection, {'uid': uid}):
             res = self.__mongo.search_by_kv_pair(self.__collection, {'uid': uid})
             recent = self._modify_recent('add', res[0]['recent'], ids)
@@ -88,7 +88,8 @@ class PlayerLogic:
     def get_cache_list(self, uid, m_type):
         if self.__redis.exists(uid + '_' + m_type):
             res = []
-            play_list = eval(set(self.__redis.smembers(uid + '_' + m_type)).pop())
+            ss = list(self.__redis.smembers(uid + '_' + m_type))
+            play_list = list(map(lambda x: str(x, encoding='utf-8'), ss))
             for item in play_list:
                 m_f = self.__mongo.search_by_kv_pair(self.__file_store, {'_id': ObjectId(item)})
                 if len(m_f) > 0:
